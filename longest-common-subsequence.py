@@ -6,12 +6,7 @@ class Solution(object):
         :rtype: int
         """
 
-        inf = 0
-        dp = [ [inf for j in range(len(text2) + 1)] for i in range(len(text1) + 1) ]
-
-        dp[0][0] = 0
-        dp[0][1] = 0
-        dp[1][0] = 0
+        dp = [ [0 for j in range(len(text2) + 1)] for i in range(len(text1) + 1) ]
 
         for i in range(1, len(text1) + 1):
             for j in range(1, len(text2) + 1):
